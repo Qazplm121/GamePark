@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #1e3a8a;
+            color: white;
+            padding: 10px 20px;
+        }
+        .navbar h1 {
+            margin: 0;
+        }
+        .navbar input {
+            padding: 5px;
+            width: 200px;
+        }
+        .navbar button {
+            padding: 5px 10px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .categories {
+            padding: 20px;
+            background-color: white;
+        }
+        .categories h2 {
+            margin-top: 0;
+        }
+        .game-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .game {
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 10px;
+            width: calc(25% - 20px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .game img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .game h3 {
+            text-align: center;
+            font-size: 1rem;
+        }
+        @media (max-width: 768px) {
+            .game {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .game {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="navbar">
+        <h1>Game Park</h1>
+        <input type="text" placeholder="Search for Accessories">
+        <button>Search</button>
+    </div>
+    <div class="categories">
+        <h2>PS5 Games</h2>
+        <div class="game-grid" id="ps5Games">
+            <!-- JavaScript will load games here -->
+        </div>
+    </div>
+    <div class="categories">
+        <h2>PS4 Games</h2>
+        <div class="game-grid" id="ps4Games">
+            <!-- JavaScript will load games here -->
+        </div>
+    </div>
+    <div class="categories">
+        <h2>Nintendo Switch Games</h2>
+        <div class="game-grid" id="switchGames">
+            <!-- JavaScript will load games here -->
+        </div>
+    </div>
+    <footer style="background-color: #1e3a8a;color: #ffffff;">
+        <div class="footer-content">
+            <h3>Contact Info</h3>
+            <p>Email: harisejaz02@gmail.com</p>
+            <p>Phone: 03131525550</p>
+            <p>Instagram:Game park</p>
+            <h3>Reach Out</h3>
+            <p>Follow us on social media for the latest updates and offers.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/gamep_ark1?utm_source=qr&igsh=cXhiZTlxODFyZmlh" target="_blank" class="social-button">Instagram</a>
+                <a href="mailto:harisejaz02@gmail.com" class="social-button">Gmail</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
